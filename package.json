@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "scripts": {
+    "optim": "node build --width=$npm_config_width --qty=$npm_config_qty",
+    "build": "node build --width=$npm_config_width --qty=$npm_config_qty",
+    "shopify": "node build --width=1500 --qty=90"
+  },
+  "dependencies": {
+    "esbuild": "0.17.10"
+  },
+  "devDependencies": {
+    "filesize": "^10.0.6",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "sharp": "^0.31.3",
+    "yargs": "^17.7.0"
+  }
+}
