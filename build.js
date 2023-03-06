@@ -49,7 +49,7 @@ readdir(inputDir, (err, files) => {
 
             imagemin([outputPath], outputDir, {
               plugins: [
-                pngquant({ quality: [0.6, 0.8] }),
+                pngquant({ quality: [0.4, 0.8] }),
                 mozjpeg({ quality: qtyImg })
               ]
             }).then(() => {
