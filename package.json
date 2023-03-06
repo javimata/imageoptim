@@ -1,9 +1,10 @@
 {
   "type": "module",
   "scripts": {
-    "optim": "node build --width=$npm_config_width --qty=$npm_config_qty",
-    "build": "node build --width=$npm_config_width --qty=$npm_config_qty",
-    "shopify": "node build --width=1500 --qty=90"
+    "build": "node build",
+    "optim": "node build --qty=80",
+    "custom": "node build --width=$npm_config_width --qty=$npm_config_qty",
+    "shopify": "node build --width=1500 --qty=90 --dpi=72"
   },
   "dependencies": {
     "esbuild": "0.17.10"
